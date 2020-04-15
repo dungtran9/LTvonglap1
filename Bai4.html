@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function displayFiboList(quantity) {
+    let st1 = 0;
+    let st2 = 1;
+    let count = 2;
+
+    while (count < quantity) {
+        let st3 = st1 + st2;
+        if(st3%5==0){
+            document.write(" số đầu tiên trong dãy fibonacci chia hết cho 5 la " +st3);
+
+        break;}
+        count++;
+        st1 = st2;
+        st2 = st3;
+
+    }
+}
+let number=+prompt("So luong so FIbo: ");
+displayFiboList(number);
+</script>
+
+</body>
+</html>
