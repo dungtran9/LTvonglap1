@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="button" value="Play" onclick="checkWin()">
+<script>
+function checkWin() {
+    let a =+prompt("Nhap so trong khoang tu");
+    let b =+prompt("den");
+    let random =Math.floor(Math.random()*(b-a+1)+a)
+    while (1)
+    {
+        let number = +prompt("Nhap vao so ban chon:");
+        if (number < random)
+        {
+            alert("nhap so lon hon");
+        }
+        else if (number > random)
+        {
+            alert("nhap so nho hon");
+        }
+        else
+        {
+            alert("Victory");
+            break;
+        }
+    }
+
+}
+</script>
+
+</body>
+</html>
